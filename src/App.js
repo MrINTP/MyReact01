@@ -30,13 +30,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyMain from "./mymain/MyMain";
 import MyTest from "./mytest/MyTest";
 import Myfile01 from "./mycomponent/Myfile01";
+import MyHeader from "./myheader/MyHeader";
 
 const App = () => {
   return (
     <div className="App">
-      <MyMain />
-      <MyTest />
-      <Myfile01 />
+      <Routes>
+        <MyHeader />
+        <Route path="/" element={<MyMain />} />
+      </Routes>
     </div>
   );
 };
