@@ -1,5 +1,7 @@
 const count = 0;
 
+//화살표 함수로 했을 때
+//Use an arrow function
 const saying = (inputCount) => {
   const myMsg01 = "님은 GF를 " + inputCount + "번 사귀었습니다.";
   let myMsg02;
@@ -16,3 +18,11 @@ const saying = (inputCount) => {
 };
 
 saying(count);
+
+//일반 함수로 했을 때
+//Use a general function
+
+//Paused!
+function speaking(inputCount) {
+  const myMsg01 = "";
+}
