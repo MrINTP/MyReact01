@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function MyMain() {
+  const gayJoyGo = useNavigate();
 
   const [isToggled, setIsToggled] = useState(true);
 //  let isToggled = false;
@@ -19,7 +20,7 @@ function MyMain() {
     //게이조이고 변수는 useNavigate를 쓰며, 사용 방법은 존나 간단함.
   }
 
-  const gayJoyGo = useNavigate();
+
   
   return (
     <>
@@ -47,6 +48,7 @@ function MyMain() {
        <div>
         {/* js에서 다른 페이지로 넘어가는 방법 적용하기 ㅋ */}
         {/* 하지만 이를 그대로 쓰면 뭉탱이를 또 가져오는 문제가 있음 해결 방법은 useNavigate를 사용함 */}
+        <p>게이 조이고(useNavigate)를 사용함 ㅋ</p>
         <button onClick={navFilePage}>화살표 함수 버튼</button>
        </div>
        

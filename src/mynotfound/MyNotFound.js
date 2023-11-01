@@ -5,7 +5,7 @@ const MyNotFound = () => {
     <>
       <div>
         <div>
-          <p>404 Not Found 훼이크다 이 볍신들아 ㅋㅋㅋㅋㅋㅋ</p>
+          <p style={{color : "red"}}><h1>404 Not Found 훼이크다 이 볍신들아 ㅋㅋㅋㅋㅋㅋ</h1></p>
         </div>
       </div>
     </>
