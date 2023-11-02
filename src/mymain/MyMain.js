@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 function MyMain() {
   const gayJoyGo = useNavigate();
+  const goTodo = useNavigate();
 
   const [isToggled, setIsToggled] = useState(true);
 //  let isToggled = false;
@@ -20,8 +21,10 @@ function MyMain() {
     //게이조이고 변수는 useNavigate를 쓰며, 사용 방법은 존나 간단함.
   }
 
+  const f_goTodo = () => {
+    goTodo('todo/ang');
+  }
 
-  
   return (
     <>
       <div>
@@ -50,6 +53,10 @@ function MyMain() {
         {/* 하지만 이를 그대로 쓰면 뭉탱이를 또 가져오는 문제가 있음 해결 방법은 useNavigate를 사용함 */}
         <p>게이 조이고(useNavigate)를 사용함 ㅋ</p>
         <button onClick={navFilePage}>화살표 함수 버튼</button>
+       </div>
+       <div>
+        <p>todo로 가겠습니다.</p>
+        <button onClick={f_goTodo}>toDo로 가기</button>
        </div>
        
 
