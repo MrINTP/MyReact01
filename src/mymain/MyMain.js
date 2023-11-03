@@ -41,7 +41,7 @@ function MyMain() {
        </p>
        <button onClick={btnChangeColor}>색상 변경</button>
        <div>
-        <p>이것은 Link to로 사용했을 경우입니다. 하하</p>
+        <p>이것은 Link to로 사용했을 경우입니다. 하하 호호호</p>
         <Link to="/file"> <button>File로 이동</button> </Link>
        </div>
        <div>
