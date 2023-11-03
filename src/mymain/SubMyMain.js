@@ -54,7 +54,7 @@ const Wrapper = styled.div`
 
 const Container = styled.h1`
     width: 360px;
-    /* color: red;
+    /* color: red; 
     font-size: 32px;
     font-weight:bold; */
 `;
