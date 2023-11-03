@@ -31,6 +31,7 @@ import MyHeader from "./myheader/MyHeader";
 import "./App.css";
 import MyTest from "./mytest/MyTest";
 import MyToDo from "./mycomponent/MyToDo";
+import SubMyMain from "./mymain/SubMyMain";
 
 const App = () => {
   return(
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/" element={<MyMain />}/>
           <Route path="file" element={<Myfile01/>}/>
           <Route path="test" element={<MyTest/>}/>
+          <Route path="sub" element={<SubMyMain />} />
           {/* 여기서 URL에 todo만 입력하면 404로 가게 된다 맨 */}
           {/* todo/3 이렇게 입력만 해도 todo로 간다. 3 아닌 다른 키 값 넣어도 된다 */}
           <Route path="todo/:todoID" element={<MyToDo />} />

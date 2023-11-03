@@ -34,6 +34,11 @@ const MyToDo = () => {
             <div>
                 <p>너님이 입력한 것 Qeuery String(color ) : "<span style={{color:"red"}}>{youColor}</span>"</p>
             </div>
+            <p>URL 파라미터 쓰려면 todo/ang 쓰면 됨</p>
+            <p>Qeuery String 쓰려면 todo/ang?에 물음표 쓰고(ang 아니여도 됨), page=1 하면 page에 1 나옴,
+                그리고 color도 하려면 &&color=red 이렇게 하면 됨
+            </p>
+            <p>npm install styled-component</p>
             <div>
                 <p>메인으로 돌아가는 나</p>
                 <button onClick={f_goMain}>뷁뷁</button>
